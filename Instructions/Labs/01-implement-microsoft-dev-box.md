@@ -12,7 +12,7 @@ lab:
 
 - Um locatário do Microsoft Entra com três contas de usuário pré-criadas (e, opcionalmente, três grupos do Microsoft Entra pré-criados) representando três funções diferentes envolvidas em implantações do Computador de Desenvolvimento da Microsoft. Para fins de clareza, os nomes de usuário e grupo nas instruções do laboratório devem correspondendo às informações na tabela a seguir:
 
-| Usuário              | Agrupar                        | Função                  |
+| Usuário              | Grupo                        | Função                  |
 | ----------------- | ---------------------------- | --------------------- |
 | platformegineer01 | DevCenter_Platform_Engineers | Engenheiro de plataforma     |
 | devlead01         | DevCenter_Dev_Leads          | Líder da equipe de desenvolvimento |
@@ -63,7 +63,7 @@ Nesta tarefa, você cria um centro de desenvolvimento do Azure que será usado d
    | Assinatura                                                            | O nome da assinatura do Azure que você está usando neste laboratório |
    | Grupo de recursos                                                          | O nome de um **novo** grupo de recursos** rg-devcenter-01**     |
    | Nome                                                                    | **devcenter-01**                                             |
-   | Location                                                                | **(EUA) Leste dos EUA**                                             |
+   | Localidade                                                                | **(EUA) Leste dos EUA**                                             |
    | Anexar um catálogo de início rápido – definições de ambiente de implantação do Azure | Habilitado                                                      |
    | Anexar um catálogo de início rápido – tarefas de personalização do computador de desenvolvimento              | Desabilitado                                                     |
 
@@ -185,7 +185,7 @@ Nessa tarefa, você cria um pool de computadores de desenvolvimento no projeto d
    | Nome                                                                                                              | **devcenter-project-01-devbox-pool-01**  |
    | Definição                                                                                                        | **devbox-definition-01**                 |
    | Conexão de rede                                                                                                | **Implantar em uma rede hospedada da Microsoft** |
-   | Região                                                                                                            | **(EUA) Leste dos EUA**                         |
+   | Region                                                                                                            | **(EUA) Leste dos EUA**                         |
    | Habilitar logon único                                                                                             | Habilitado                                  |
    | Privilégios de Criador do Computador de Desenvolvimento                                                                                        | **Administrador Local**                  |
    | Ativar parada automática dentro do cronograma                                                                                      | Habilitado                                  |
@@ -201,7 +201,7 @@ Nessa tarefa, você cria um pool de computadores de desenvolvimento no projeto d
 
 Nessa tarefa, você atribui permissões adequadas relacionadas ao computador de desenvolvimento da Microsoft às três entidades de segurança do Microsoft Entra que foram provisionadas em seu ambiente de laboratório. Essas entidades de segurança correspondem a funções típicas em cenários de engenharia de plataforma:
 
-| Usuário              | Agrupar                        | Função                  |
+| Usuário              | Grupo                        | Função                  |
 | ----------------- | ---------------------------- | --------------------- |
 | platformegineer01 | DevCenter_Platform_Engineers | Engenheiro de plataforma     |
 | devlead01         | DevCenter_Dev_Leads          | Líder da equipe de desenvolvimento |
@@ -295,7 +295,7 @@ Nesta tarefa, você cria uma galeria de computação do Azure e a anexa ao centr
    | Assinatura   | O nome da assinatura do Azure que você está usando neste laboratório |
    | Grupo de recursos | **rg-devcenter-01**                                          |
    | Nome           | **compute_gallery_01**                                       |
-   | Região         | **(EUA) Leste dos EUA**                                             |
+   | Region         | **(EUA) Leste dos EUA**                                             |
 
 1. Na guia **Método de compartilhamento** da página **Criar galeria de computação do Azure**, deixe a opção padrão **Controle de acesso baseado em função (RBAC)** selecionada e, em seguida, selecione **Revisar + Criar**.
 1. Na guia **Examinar + criar**, aguarde a conclusão do processo de validação e selecione **Criar**.
@@ -562,7 +562,7 @@ Nesta tarefa, você configura a rede do centro de desenvolvimento do Azure para 
    | Assinatura   | O nome da assinatura do Azure que você está usando neste laboratório |
    | Grupo de recursos | **rg-devcenter-01**                                          |
    | Nome           | **vnet-01**                                                  |
-   | Location       | **(EUA) Leste dos EUA**                                             |
+   | Localidade       | **(EUA) Leste dos EUA**                                             |
 
 1. Na guia **Segurança** da página **Criar rede virtual**, examine as configurações existentes sem alterar seus valores padrão e selecione **Avançar**.
 1. Na guia **Endereços IP** da página **Criar rede virtual**, examine as configurações existentes sem alterar seus valores padrão e selecione **Revisar + Criar**.
@@ -580,7 +580,7 @@ Nesta tarefa, você configura a rede do centro de desenvolvimento do Azure para 
    | Grupo de recursos  | **rg-devcenter-01**                                          |
    | Nome            | **network-connection-vnet-01**                               |
    | Rede virtual | **vnet-01**                                                  |
-   | Sub-rede          | **default**                                                  |
+   | Sub-rede          | **padrão**                                                  |
 
 1. Na guia **Revisar + Criar** da página **Criar rede virtual**, selecione **Criar**.
 
