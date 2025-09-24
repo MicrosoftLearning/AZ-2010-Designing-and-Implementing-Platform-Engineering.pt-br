@@ -31,7 +31,7 @@ Como engenheiro de plataforma, você precisa garantir que os aplicativos em exec
 1. Abra o Portal do Azure.
 1. Na barra de pesquisa, digite e selecione Serviços de Aplicativos.
 1. Clique em + Criar e selecione Aplicativo Web.
-1. Na guia Básico:
+1. Na guia Noções básicas:
    - Assinatura: Selecione sua assinatura do Azure.
    - Grupo de recursos: clique em Criar novo, insira **`monitoringlab-rg`** e clique em OK.
    - Nome: digite um nome único, como **`monitoringlab-webapp`**.
