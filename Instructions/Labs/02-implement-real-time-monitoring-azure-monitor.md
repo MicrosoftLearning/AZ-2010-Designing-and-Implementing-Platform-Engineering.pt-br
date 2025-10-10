@@ -49,6 +49,8 @@ Como engenheiro de plataforma, você precisa garantir que os aplicativos em exec
 1. O Application Insights já está habilitado para este aplicativo Web. Clique no link para abrir o recurso Application Insights.
 1. No recurso Application Insights, clique no Painel do Aplicativo para exibir os dados de desempenho fornecidos pelo painel padrão.
 
+   > **Observação:** o painel pode levar alguns instantes para carregar e exibir totalmente todos os dados de desempenho. Aguarde até que o painel seja renderizado completamente antes de continuar para garantir a experiência ideal nos exercícios subsequentes.
+
 ## Exercício 2: configurar o Azure Monitor e os painéis
 
 ### Tarefa 1: acessar o Azure Monitor
@@ -66,10 +68,18 @@ Como engenheiro de plataforma, você precisa garantir que os aplicativos em exec
 1. Repita o processo com outras métricas.
    - Tempo de CPU (contagem)
    - Solicitações (média)
-1. Clique no painel e fixe no painel.
-1. Selecione o tipo Compartilhado e selecione a assinatura e o painel monitoringlab-webapp.
-1. Clique em Fixar no painel.
-1. Clique no ícone do painel no painel esquerdo para exibir o painel.
+1. Na área do gráfico de métricas, clique no botão **Fixar no painel** (ícone de alfinete) no canto superior direito do gráfico.
+1. Na caixa de diálogo **Fixar no painel** que aparece:
+   - Selecione **Novo** para criar um painel
+   - Insira um nome de painel: **`MonitoringLab Dashboard`**
+   - Selecione a assinatura apropriada
+   - Escolha o tipo de painel:
+     - **Público**: o painel ficará visível para todos os usuários da organização. É adequado para cenários em que a visibilidade compartilhada é necessária.
+     - **Privado**: o painel só ficará visível para você. É recomendado para exercícios de laboratório ou cenários em que a visibilidade dos dados deve ser restrita.
+   - Clique em **Criar e fixar**
+1. Após o painel ser criado e as métricas serem fixadas, clique em **Salvar** no menu superior para salvar o painel.
+1. Navegue até o painel clicando no ícone **Painel** no painel esquerdo do portal do Azure, ou pesquise por "Painel" na barra de pesquisa superior.
+1. Selecione o **painel MonitoringLab** recém-criado na lista de painéis.
 1. Verifique se as métricas são exibidas no painel e estão sendo atualizadas em tempo real.
 
 ## Exercício 3: criar alertas
